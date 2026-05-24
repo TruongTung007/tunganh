@@ -18,6 +18,10 @@ div.container {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   max-width: 900px; /* Giới hạn độ rộng vừa mắt */
+  
+  /* --- ĐÃ THÊM: CĂN GIỮA TOÀN BỘ KHỐI CONTAINER --- */
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* --- PHẦN SỬA LỖI CHO THANH MENU (NAVBAR) --- */
@@ -33,6 +37,10 @@ nav.navbar .container {
   box-shadow: none !important;
   padding: 0 !important;
   max-width: 900px !important;
+  /* Đảm bảo navbar tuân theo căn giữa nhưng không bị dính margin dưới */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 0 !important;
 }
 
 /* Làm đẹp cho chữ chuyển trang */
@@ -142,7 +150,7 @@ nav.navbar .container {
   background-color: #f8f9fa;
 }
 
-/* Thêm căn giữa cho cột chứa ô tích hoàn thành (nếu cần) */
+/* Thêm căn giữa cho cột chứa ô tích hoàn thành */
 .text-center {
   text-align: center;
 }
