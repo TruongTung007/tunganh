@@ -1,17 +1,16 @@
-/* 1. Định dạng kích thước ảnh cho Slider (Carousel) */
+
 #slider .carousel-item img {
-  height: 450px; /* Chiều cao cố định cho slider (có thể tăng/giảm tùy ý) */
-  object-fit: cover; /* Giữ nguyên tỉ lệ ảnh, tự động cắt viền thừa để không bị méo */
+  height: 450px; 
+  object-fit: cover; 
 }
 
-/* 2. Định dạng ảnh đại diện (Avatar) của các thành viên */
 .profile-img {
-  width: 130px; /* Độ rộng cố định của ảnh */
-  height: 130px; /* Chiều cao bằng chiều rộng để tạo thành hình vuông hoàn hảo */
-  object-fit: cover; /* Cắt gọn ảnh để khuôn mặt không bị kéo giãn */
+  width: 130px; 
+  height: 130px; 
+  object-fit: cover;
 }
 
-/* 3. Tùy chỉnh nhỏ giúp giao diện mượt mà hơn */
+
 .card {
   transition:
     transform 0.2s ease,
@@ -19,6 +18,6 @@
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Hiệu ứng nổi lên nhẹ khi di chuột vào card */
+  transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1) !important;
 }
