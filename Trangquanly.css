@@ -1,49 +1,49 @@
-/* Cấu hình nền và font chữ cho toàn trang */
+
 body {
-  background-color: #1e222b !important; /* Màu nền tối sang trọng giống VS Code */
+  background-color: #1e222b !important; 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 50px;
   
-  /* --- ĐOẠN SỬA LỖI ĐÈ CLASS CỦA BODY HTML --- */
-  color: #212529 !important; /* Trả lại màu chữ tối mặc định cho nội dung bên dưới */
-  border: none !important;    /* Xóa viền nút bấm bị áp đặt từ body */
-  display: block !important;  /* Đảm bảo layout hiển thị bình thường */
+  
+  color: #212529 !important; 
+  border: none !important; 
+  display: block !important; 
 }
 
-/* Định dạng các khối nội dung bên dưới thành hộp trắng bo góc */
+
 div.container {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  max-width: 900px; /* Giới hạn độ rộng vừa mắt */
+  max-width: 900px;
   
-  /* --- ĐÃ THÊM: CĂN GIỮA TOÀN BỘ KHỐI CONTAINER --- */
+
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-/* --- PHẦN SỬA LỖI CHO THANH MENU (NAVBAR) --- */
+
 nav.navbar {
-  background-color: #161920 !important; /* Nền tối riêng cho navbar */
+  background-color: #161920 !important; 
   padding: 15px 0;
   margin-bottom: 30px;
 }
 
-/* Giải cứu vùng container bên trong navbar không bị dính màu trắng */
+
 nav.navbar .container {
   background: transparent !important;
   box-shadow: none !important;
   padding: 0 !important;
   max-width: 900px !important;
-  /* Đảm bảo navbar tuân theo căn giữa nhưng không bị dính margin dưới */
+ 
   margin-left: auto !important;
   margin-right: auto !important;
   margin-bottom: 0 !important;
 }
 
-/* Làm đẹp cho chữ chuyển trang */
+
 .navbar-link {
   color: rgba(255, 255, 255, 0.7) !important;
   text-decoration: none;
@@ -52,26 +52,24 @@ nav.navbar .container {
   transition: color 0.2s ease;
 }
 
-/* Hiệu ứng sáng lên khi di chuột vào chữ menu */
+
 .navbar-link:hover {
-  color: #198754 !important; /* Đổi sang màu xanh lá đồng bộ với nút bấm */
+  color: #198754 !important; 
 }
 .navbar-nav {
   display: flex !important;
-  flex-direction: row !important; /* Chuyển từ hàng dọc sang hàng ngang */
+  flex-direction: row !important; 
   align-items: center;
 }
 
-/* Định dạng lại các thẻ link để hiển thị dạng khối ngang */
+
 .navbar-link {
   display: inline-block !important;
-  padding: 5px 15px !important; /* Tạo khoảng cách bấm cho dễ trúng */
-  margin-left: 10px !important; /* Khoảng cách giữa các chữ */
-  white-space: nowrap; /* Ngăn không cho chữ bị rớt dòng */
+  padding: 5px 15px !important;
+  margin-left: 10px !important;
+  white-space: nowrap; 
 }
-/* ------------------------------------------- */
 
-/* Tiêu đề */
 .label,
 .table-title {
   font-size: 1.6rem;
@@ -82,7 +80,6 @@ nav.navbar .container {
   padding-left: 15px;
 }
 
-/* Định dạng các ô nhập liệu (ĐÃ THÊM #mssv VÀO ĐÂY) */
 #mssv,
 #name,
 #nv,
@@ -95,10 +92,9 @@ nav.navbar .container {
   border-radius: 8px;
   font-size: 15px;
   transition: all 0.2s ease;
-  box-sizing: border-box; /* Đảm bảo padding không làm tràn khung */
+  box-sizing: border-box; 
 }
 
-/* Hiệu ứng viền xanh khi click vào các ô nhập liệu (ĐÃ THÊM #mssv VÀO ĐÂY) */
 #mssv:focus,
 #name:focus,
 #nv:focus,
@@ -109,9 +105,8 @@ nav.navbar .container {
   outline: none;
 }
 
-/* Nút bấm gửi thông tin */
 .ketqua {
-  text-align: left; /* Căn trái giống trong ảnh của bạn */
+  text-align: left;
   margin-top: 5px;
 }
 .ketqua button {
@@ -128,7 +123,6 @@ nav.navbar .container {
   background-color: #157347;
 }
 
-/* Làm đẹp bảng hiển thị danh sách */
 .custom-table {
   width: 100%;
   border-collapse: collapse;
